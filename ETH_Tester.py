@@ -974,6 +974,7 @@ class ETH_Tester(QtWidgets.QMainWindow):
             QMessageBox(QMessageBox.Critical, 'Ошибка обработки файла данных для передачи', str(EXP),
                                        QMessageBox.Ok).exec()
 
+
     #*********************************************************************
     def ParseData(self, data):
         '''
