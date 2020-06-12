@@ -6,7 +6,7 @@
 #
 # Run the build process by running the command
 #
-# C:\Python34\python.exe setup.py build_exe
+# C:\Python36\python.exe setup.py build_exe
 #
 # If everything works well you should find a subdirectory in the build
 # subdirectory that contains the files needed to run the application
@@ -14,14 +14,13 @@
 import sys, os.path
 from cx_Freeze import setup, Executable
 
-
 base = None
 if sys.platform == 'win32':
     base = 'Win32GUI'
 
 options = {
     'build_exe': {
-        'packages':['atexit','pyexcel_xls'],
+        'packages':['atexit', 'serial', 'pyexcel_xls', 'xlrd', 'xlwt'],
     }
 }
 

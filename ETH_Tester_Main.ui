@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>647</width>
-    <height>463</height>
+    <width>635</width>
+    <height>455</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>460</width>
-    <height>376</height>
+    <width>635</width>
+    <height>455</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>1000</width>
-    <height>1000</height>
+    <width>635</width>
+    <height>455</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -27,13 +27,13 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>touchscreen.ico</normaloff>
-    <normalon>touchscreen.ico</normalon>touchscreen.ico</iconset>
+    <normaloff>../../../Users/Users/Users/Users/Users/Users/Users/Users/User/.designer/backup/touchscreen.ico</normaloff>
+    <normalon>../../../Users/Users/Users/Users/Users/Users/Users/Users/User/.designer/backup/touchscreen.ico</normalon>../../../Users/Users/Users/Users/Users/Users/Users/Users/User/.designer/backup/touchscreen.ico</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushButton_Choice_File">
     <property name="enabled">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
@@ -66,9 +66,9 @@
     </property>
     <property name="geometry">
      <rect>
-      <x>460</x>
+      <x>400</x>
       <y>380</y>
-      <width>161</width>
+      <width>201</width>
       <height>23</height>
      </rect>
     </property>
@@ -83,8 +83,8 @@
     <property name="geometry">
      <rect>
       <x>9</x>
-      <y>240</y>
-      <width>441</width>
+      <y>270</y>
+      <width>384</width>
       <height>131</height>
      </rect>
     </property>
@@ -93,22 +93,6 @@
       <width>10</width>
       <height>10</height>
      </size>
-    </property>
-   </widget>
-   <widget class="QProgressBar" name="progressBar">
-    <property name="geometry">
-     <rect>
-      <x>9</x>
-      <y>381</y>
-      <width>441</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="maximum">
-     <number>5</number>
-    </property>
-    <property name="value">
-     <number>0</number>
     </property>
    </widget>
    <widget class="QTabWidget" name="tabWidget">
@@ -215,7 +199,7 @@
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>461</width>
+        <width>601</width>
         <height>80</height>
        </rect>
       </property>
@@ -238,7 +222,7 @@
       <widget class="QPushButton" name="pushButton_open_TCP_Server">
        <property name="geometry">
         <rect>
-         <x>109</x>
+         <x>255</x>
          <y>40</y>
          <width>171</width>
          <height>23</height>
@@ -254,7 +238,7 @@
        </property>
        <property name="geometry">
         <rect>
-         <x>290</x>
+         <x>430</x>
          <y>40</y>
          <width>161</width>
          <height>23</height>
@@ -272,6 +256,35 @@
          <width>91</width>
          <height>22</height>
         </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_IP_Address_TCP_Server">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>40</y>
+         <width>141</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>20</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Адрес</string>
        </property>
       </widget>
      </widget>
@@ -345,7 +358,7 @@
         <string>IP адрес сервера</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_TCP_IP_addr">
+      <widget class="QLineEdit" name="lineEdit_TCP_IP_Addr">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -355,7 +368,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_TCP_Client_IP_port">
+      <widget class="QLineEdit" name="lineEdit_TCP_Client_IP_Port">
        <property name="geometry">
         <rect>
          <x>170</x>
@@ -376,7 +389,7 @@
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>461</width>
+        <width>601</width>
         <height>80</height>
        </rect>
       </property>
@@ -389,7 +402,7 @@
        </property>
        <property name="geometry">
         <rect>
-         <x>290</x>
+         <x>430</x>
          <y>40</y>
          <width>161</width>
          <height>23</height>
@@ -404,7 +417,7 @@
         <rect>
          <x>9</x>
          <y>20</y>
-         <width>231</width>
+         <width>91</width>
          <height>16</height>
         </rect>
        </property>
@@ -415,7 +428,7 @@
       <widget class="QPushButton" name="pushButton_open_UDP_Server">
        <property name="geometry">
         <rect>
-         <x>109</x>
+         <x>255</x>
          <y>40</y>
          <width>171</width>
          <height>23</height>
@@ -433,6 +446,35 @@
          <width>91</width>
          <height>22</height>
         </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_IP_Address_UDP_Server">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>40</y>
+         <width>141</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>110</x>
+         <y>20</y>
+         <width>91</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Адрес</string>
        </property>
       </widget>
      </widget>
@@ -490,7 +532,7 @@
         <string>Подключиться к серверу</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_UDP_Client_IP_port">
+      <widget class="QLineEdit" name="lineEdit_UDP_Client_IP_Port">
        <property name="geometry">
         <rect>
          <x>171</x>
@@ -513,7 +555,7 @@
         <string>IP адрес сервера</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_UDP_IP_addr">
+      <widget class="QLineEdit" name="lineEdit_UDP_IP_Addr">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -529,8 +571,8 @@
    <widget class="QCheckBox" name="checkBoxCiclicSend">
     <property name="geometry">
      <rect>
-      <x>460</x>
-      <y>350</y>
+      <x>400</x>
+      <y>337</y>
       <width>171</width>
       <height>20</height>
      </rect>
@@ -539,13 +581,96 @@
      <string>Циклическая отправка</string>
     </property>
    </widget>
+   <widget class="QCheckBox" name="checkBoxXlsSave">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>316</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Запись принятых данных в xls</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonClearText">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>270</y>
+      <width>201</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Очистить принятые данные</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Rx_Data">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>250</y>
+      <width>381</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Принятые данные</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBoxShowRxData">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>295</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Отображать принятые данные</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Send_One_Pack">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>357</y>
+      <width>201</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Отправить один пакет</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>647</width>
+     <width>635</width>
      <height>26</height>
     </rect>
    </property>
