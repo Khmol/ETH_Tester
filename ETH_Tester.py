@@ -843,27 +843,6 @@ class ETH_Tester(QtWidgets.QMainWindow):
                     return False
         except Exception as EXP:
             print (EXP)
-        '''
-        #определяем длину полезных данных
-        self.rs_pack_size_TX = len(useful_data) + 6 # 2 - стартовых, 2 - длина, 2 - CRC = 6
-        self.rs_pack_seq_TX += 1   #увеличиваем счетчик последовательности
-        #обнуляем счетчик последовательности
-        if self.rs_pack_seq_TX == 256:
-            self.rs_pack_seq_TX = 0
-        self.rs_send_pack = self.RS_START + \
-                            self.rs_pack_size_TX.to_bytes(2,'little') + \
-                            useful_data
-
-        #выводим в терминал для отладки
-        self.string_Data = '>> ' + str(len(self.rs_send_pack)) + ' байт '
-        for i in range (len(self.rs_send_pack)):
-            self.string_Data = self.string_Data + ' ' + str(hex(self.rs_send_pack[i]))
-
-        return
-        #ps_pack_int = int.from_bytes(rs_pack_bytes, byteorder='big')
-        #self.ser.write(self.rs_tx_buffer.encode('utf-8'))
-        #rs_pack_size_TX = len(rs_pack_seq_TX.to_bytes(1,'big') + rs_ID.to_bytes(1,'big') + rs_DATA)
-        '''
 
     #*********************************************************************
     def SaveDataToXls(self):
@@ -974,7 +953,6 @@ class ETH_Tester(QtWidgets.QMainWindow):
             QMessageBox(QMessageBox.Critical, 'Ошибка обработки файла данных для передачи', str(EXP),
                                        QMessageBox.Ok).exec()
 
-
     #*********************************************************************
     def ParseData(self, data):
         '''
@@ -1001,6 +979,7 @@ class ETH_Tester(QtWidgets.QMainWindow):
                 out_str = str(EXP)
                 QMessageBox(QMessageBox.Warning, 'Ошибка.', out_str, QMessageBox.Ok).exec()
         return returnData
+
 
     #*********************************************************************
     def GetRsData(self):
